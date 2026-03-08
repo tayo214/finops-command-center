@@ -23,6 +23,28 @@ My personal AWS account has minimal spend ($0.64 over 3 months), which is great 
 
 ---
 
+## Why I Built This
+
+After years in cloud engineering, one thing drives me crazy: **manual, repetitive tasks that should be automated.**
+
+I've seen FinOps teams spend hours every week:
+- Manually exporting CSV files from AWS Cost Explorer
+- Copy-pasting numbers into spreadsheets
+- Creating static reports that are outdated the moment they're shared
+- Sending stakeholders raw billing data they can't interpret
+
+**This is backwards.** We automated infrastructure with IaC. We automated deployments with CI/CD. Why are we still doing FinOps manually?
+
+This dashboard represents how I think FinOps should work:
+- **Automated data ingestion** - no more manual CSV exports
+- **Real-time visibility** - data updates continuously, not monthly
+- **Stakeholder-friendly** - executives see trends and anomalies, not raw bills
+- **Self-service** - teams can explore their own costs without waiting for reports
+
+I don't just want to show stakeholders bills. I want to give them **insights they can act on**, delivered through dashboards they actually understand.
+
+That's the automation mindset I'm bringing from cloud engineering into the FinOps world.
+
 ## Screenshots
 
 ### Enterprise Scale Analysis ($4.2M)
