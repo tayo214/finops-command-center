@@ -97,3 +97,86 @@ This project isn't just about making charts - it implements real FinOps principl
 
 ## How to Run This
 ```bash
+# Clone the repo
+git clone https://github.com/tayo214/finops-command-center
+cd finops-command-center
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the dashboard
+streamlit run src/app.py
+```
+
+The dashboard opens in your browser at `http://localhost:8501`.
+
+**Want to use your own AWS data?**  
+Export from AWS Cost Explorer as CSV, drop it in the `data/` folder, and toggle to "Personal Account" view.
+
+---
+
+## Project Structure
+```
+finops-command-center/
+├── src/
+│   ├── app.py              # Main dashboard
+│   └── prepare_data.py     # Data processing
+├── data/
+│   ├── simulated_aws_data.csv    # Enterprise demo data
+│   ├── aws_billing_services.csv  # My real AWS data
+│   └── aws_billing_accounts.csv  # My real AWS data
+├── screenshots/            # Dashboard screenshots
+└── README.md
+```
+
+---
+
+## What I Learned Building This
+
+**The hard parts:**
+- AWS Cost Explorer CSV format is... quirky. Service names in column headers, costs in rows, dates all over the place. Took some creative Pandas work to wrangle it into something usable.
+- Getting service names to show on charts when you have 4 services vs. 10 services vs. tiny dollar amounts - had to make the visualizations adapt to wildly different scales.
+- Balancing "this looks professional" with "this doesn't take 6 months to build."
+
+**The fun parts:**
+- Seeing realistic patterns emerge from the simulated data - weekend dips, gradual growth, EC2 dominance. Felt like watching a real company's spending.
+- Building something that could actually handle enterprise-scale analysis (even if it's simulated).
+- Making a dashboard that doesn't look like every other tutorial project out there.
+
+**What I'd do next:**
+- Add RI/CUD coverage analysis (reserved instance optimization)
+- Build out unit economics tracking (cost per customer, transaction, etc.)
+- Deploy to Streamlit Cloud for live demos
+
+---
+
+## About Me
+
+**Tayo Salako**  
+FinOps Certified Practitioner (90% exam score)
+
+I passed the FinOps certification because I'm genuinely interested in how cloud costs work and how to optimize them. This project demonstrates what I learned - not just theory, but actual working code that solves real problems.
+
+**Connect with me:**
+- **LinkedIn:** https://www.linkedin.com/in/babatunde-salako-7752a1391/
+- **GitHub:** https://github.com/tayo214
+- **Email:** babatunde.salako@gmail.com
+
+---
+
+## Certification
+
+![FinOps Certified Practitioner](https://img.shields.io/badge/FinOps-Certified%20Practitioner-blue?style=for-the-badge)
+
+Passed with 90% (45/50 questions) - certified in cloud financial management, cost optimization strategies, and organizational FinOps implementation.
+
+---
+
+## License
+
+MIT - feel free to use this for your own FinOps learning!
+
+---
+
+**Built by Tayo Salako** | FinOps Certified Practitioner  
+Questions about the project? Want to discuss FinOps strategies? Reach out via [LinkedIn](https://www.linkedin.com/in/babatunde-salako-7752a1391/) or [email](mailto:babatunde.salako@gmail.com) - I'm always happy to talk cloud costs and optimization!
