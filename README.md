@@ -175,7 +175,7 @@ finops-command-center/
 ## About Me
 
 **Tayo Salako**  
-FinOps Certified Practitioner (90% exam score)
+FinOps Certified Practitioner
 
 I passed the FinOps certification because I'm genuinely interested in how cloud costs work and how to optimize them. This project demonstrates what I learned - not just theory, but actual working code that solves real problems.
 
@@ -189,8 +189,6 @@ I passed the FinOps certification because I'm genuinely interested in how cloud 
 ## Certification
 
 ![FinOps Certified Practitioner](https://img.shields.io/badge/FinOps-Certified%20Practitioner-blue?style=for-the-badge)
-
-Passed with 90% (45/50 questions) - certified in cloud financial management, cost optimization strategies, and organizational FinOps implementation.
 
 ---
 
